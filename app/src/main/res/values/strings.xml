@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Here</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>

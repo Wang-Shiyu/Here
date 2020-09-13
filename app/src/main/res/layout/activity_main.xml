@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/m_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/tab_lly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_101"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/home_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/home_btn_false"
+                style="@style/fragment_tab_item_false"
+                android:width="80dp"
+                android:height="80dp"
+                android:drawableTop="@mipmap/home1"
+
+                android:text="首页"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/home_btn_true"
+                style="@style/fragment_tab_item_true"
+                android:drawableTop="@mipmap/home2"
+
+                android:text="首页"
+                android:textSize="9sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/location_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <Button
+
+                android:id="@+id/location_btn_false"
+                style="@style/fragment_tab_item_false"
+                android:drawableTop="@mipmap/pin1"
+                android:text="位置"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/location_btn_true"
+                style="@style/fragment_tab_item_true"
+                android:drawableTop="@mipmap/pin2"
+                android:text="位置"
+                android:textSize="9sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/user_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/user_btn_false"
+                style="@style/fragment_tab_item_false"
+                android:drawableTop="@mipmap/heart1"
+                android:text="我的"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/user_btn_true"
+                style="@style/fragment_tab_item_true"
+                android:drawableTop="@mipmap/heart2"
+                android:text="我的"
+                android:textSize="9sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

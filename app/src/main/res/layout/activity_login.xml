@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/if_twitter_22715"
+            android:layout_marginTop="41dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="0dp"
+        app:mtf_cardCollapsedHeight="4dp"
+        app:mtf_hasFocus="false"
+        app:mtf_image="@drawable/if_general_office_33_2530818"
+        app:mtf_openKeyboardOnFocus="true">
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UserName"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="20dp"
+        app:mtf_cardCollapsedHeight="4dp"
+        app:mtf_hasFocus="false"
+        app:mtf_image="@drawable/if_general_office_40_2530815"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:id="@+id/userpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PassWord"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="15sp"
+            android:inputType="textPassword"/>
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sign_in"
+            android:layout_marginStart="44dp"
+            android:background="@drawable/btn"
+            android:text="登录"
+            android:textColor="@color/text_007fe0"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_toEndOf="@+id/login"
+            android:onClick="sign_up"
+            android:background="@drawable/btn"
+            android:text="注册"
+            android:textColor="@color/text_007fe0" />
+
+    </RelativeLayout>
+
+</LinearLayout>
